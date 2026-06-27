@@ -1,0 +1,1 @@
+Don't mind this. This is just the things i practice when i start learn python. I didn't use commands so for beginners i dn't think this will be usefully. As for experts if want see the code and tell me what i did wrong.
