@@ -1,5 +1,8 @@
-games = ["Ark", "Minecraft", "Valorant", "GTA V"]
+numbers = [1, 2, 3, 4]
 
-result = [game.upper() for game in games if "a" in game.lower()]
+result = [
+    "Big" if n > 2 else "Small"
+    for n in numbers
+]
 
 print(result)
