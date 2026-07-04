@@ -97,6 +97,7 @@
 # A+
 
 class Animal():
+
     def __init__(self,name,health):
         self.name = name 
         self.health = health
@@ -110,3 +111,7 @@ rex = Rex("Rex", 500, 90)
 print(rex.name)
 print(rex.health)
 print(rex.roar_power)
+# o/p 
+# Rex
+# 500
+# 90

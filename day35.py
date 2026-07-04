@@ -115,23 +115,26 @@
 # O/P 
 # 25
 
-from abc import ABC,abstractmethod
+# from abc import ABC,abstractmethod
 
-class Weapon(ABC):
+# class Weapon(ABC):
     
-    @abstractmethod
-    def attack(self):
-        pass
+#     @abstractmethod
+#     def attack(self):
+#         pass
 
-class Sword(Weapon):
-    def attack(self):
-        print("Sword slashes!")
+# class Sword(Weapon):
+#     def attack(self):
+#         print("Sword slashes!")
 
-class Bow(Weapon):
-    def attack(self):
-        print("Bow shoots an arrow!")
+# class Bow(Weapon):
+#     def attack(self):
+#         print("Bow shoots an arrow!")
     
-weapons = [Sword(),Bow()]
+# weapons = [Sword(),Bow()]
 
-for weapon in weapons:
-    weapon.attack()
+# for weapon in weapons:
+#     weapon.attack()
+# O/P 
+# Sword slashes!
+# Bow shoots an arrow!
