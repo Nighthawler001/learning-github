@@ -1,37 +1,107 @@
-.container {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#101820;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.box1 {
-  position: absolute;
+.card{
+    width:400px;
+    padding:40px;
+    text-align:center;
+    border:5px solid cyan;
+    border-radius:20px;
+    background:#1b263b;
+    color:white;
 
-  background: lightcoral;
-  top: 20px;
-  left: 20px;
-  width: 100px;
-  height: 100px;
+    animation-name:cardEnter;
+    animation-duration:2s;
+    animation-timing-function:ease-out;
+    animation-fill-mode:forwards;
 }
 
-.box2 {
-  position: absolute;
-  z-index: 3;
-  background: gold;
-  top: 40px;
-  left: 40px;
-  width: 100px;
-  height: 100px;
+h1{
+    animation-name:textGlow;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
 }
 
-.box3 {
-  position: absolute;
-  z-index: 2;
-  background: lightgreen;
-  top: 60px;
-  left: 60px;
-  width: 100px;
-  height: 100px;
-  
+button{
+
+    margin-top:30px;
+    padding:15px 35px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+
+    animation-name:buttonPulse;
+    animation-duration:1.5s;
+    animation-delay:2s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes cardEnter{
+
+    0%{
+        opacity:0;
+        transform:translateY(-300px) rotate(-20deg) scale(.2);
+    }
+
+    60%{
+        transform:translateY(30px) rotate(5deg) scale(1.1);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0) rotate(0) scale(1);
+    }
+
+}
+
+@keyframes textGlow{
+
+    0%{
+        color:white;
+        text-shadow:0 0 5px cyan;
+    }
+
+    50%{
+        color:cyan;
+        text-shadow:
+        0 0 20px cyan,
+        0 0 40px cyan;
+    }
+
+    100%{
+        color:#00ff88;
+        text-shadow:
+        0 0 10px #00ff88,
+        0 0 30px #00ff88;
+    }
+
+}
+
+@keyframes buttonPulse{
+
+    0%{
+        background:#ff006e;
+        transform:scale(1);
+        box-shadow:0 0 10px #ff006e;
+    }
+
+    100%{
+        background:#3a86ff;
+        transform:scale(1.15);
+        box-shadow:
+        0 0 20px #3a86ff,
+        0 0 50px #3a86ff;
+    }
+
 }
