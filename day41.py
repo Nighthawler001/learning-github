@@ -11,18 +11,20 @@
 # O/P 
 # Student('Night')
 
-class Book():
-    def __init__(self,title,author):
-        self.title = title
-        self.author = author
+# class Book():
+#     def __init__(self,title,author):
+#         self.title = title
+#         self.author = author
     
-    def __repr__(self):
-        return f"Book('{self.title}','{self.author}')"
+#     def __repr__(self):
+#         return f"Book('{self.title}','{self.author}')"
 
-books = [
-    Book("Atomic Habits", "James Clear"),
-    Book("Clean Code", "Robert C. Martin")
-]
+# books = [
+#     Book("Atomic Habits", "James Clear"),
+#     Book("Clean Code", "Robert C. Martin")
+# ]
 
-print(books)
+# print(books)
+# O/p 
+# [Book('Atomic Habits','James Clear'), Book('Clean Code','Robert C. Martin')]
     
