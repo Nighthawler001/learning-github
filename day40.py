@@ -68,27 +68,31 @@
 # B
 # Invalid grade.
 
-class Game():
-    def __init__(self,rating):
-        self._rating = rating
+# class Game():
+#     def __init__(self,rating):
+#         self._rating = rating
     
-    @property
-    def rating(self):
-        return self._rating
+#     @property
+#     def rating(self):
+#         return self._rating
 
-    @rating.setter
-    def rating(self,new_rating):
-        if 1 <= new_rating <=5:
-            self._rating = new_rating
-        else:
-            print("Invalid rating")
+#     @rating.setter
+#     def rating(self,new_rating):
+#         if 1 <= new_rating <=5:
+#             self._rating = new_rating
+#         else:
+#             print("Invalid rating")
 
-game = Game(5)
+# game = Game(5)
 
-print(game.rating)
+# print(game.rating)
 
-game.rating = 3
+# game.rating = 3
 
-print(game.rating)
+# print(game.rating)
 
-game.rating = 10
+# game.rating = 10
+# O/P 
+# 5
+# 3
+# Invalid rating
